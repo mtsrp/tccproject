@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">QSHOW</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_resultado">Resultado da Busca</string>
+    <string name="title_activity_artista">Artista</string>
+    <string name="buscar">Buscar</string>
+    <string name="imgArtista">Imagem do Artista</string>
+    <string name="nomedoartista">Nome do Artista</string>
+    <string name="Biografia">Breve biografia sobre o artista escolhido.</string>
+    <string name="quando">Quando?</string>
+    <string name="onde">Onde?</string>
+    <string name="ingresso">Garanta seu ingresso:</string>
+    <string name="Diadoshow">DD/MM/AAAA</string>
+    <string name="localdoshow">Local do show</string>
+    <string name="intem1">Item 1</string>
+    <string name="title_activity_splash_screen">QSHOW</string>
+    <string name="Cidade">Ou o nome da cidade...</string>
+    <string name="Cidadee">ou o nome da cidade...</string>
+    <string name="txtdigite_o_nome_do_artista_">Digite o nome do artista...</string>
+    <string name="imgLogo">Logo</string>
+    <string name="title_activity_art_test">ArtTest</string>
+    <string name="Sobreoshow">Informações Sobre O Show</string>
+    <string name="cidadeshow">Cidade Show</string>
+    <string name="sobres">Sobre o show:</string>
+    <string name="txtDigiteArtistaCidade">Digite o nome do artista/cidade...</string>
+    <string name="registro">Nenhum resultado foi encontrado, tente novamente</string>
+
+</resources>

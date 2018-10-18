@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/qfundo"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.equipe.qshow.QSHOW" >
+
+    <Button
+        android:id="@+id/btnbuscar"
+        android:layout_width="284dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/screen_border"
+        android:text="@string/buscar"
+        android:textAllCaps="true"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/txtBuscar"
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnbuscar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="@string/txtDigiteArtistaCidade"
+        android:inputType="text"
+        android:maxEms="1"
+        android:minLines="1"
+        android:selectAllOnFocus="true" >
+
+        <requestFocus />
+    </EditText>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtBuscar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/imgLogo"
+        android:src="@drawable/qs" />
+
+</RelativeLayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/qfundo"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="812dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txtArtista"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/imagemArtista"
+                android:background="#FF4500"
+                android:gravity="center"
+                android:text="@string/nomedoartista"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#F0FFFF"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imagemArtista"
+                android:layout_width="match_parent"
+                android:layout_height="177dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:contentDescription="@string/imgArtista" />
+
+            <TextView
+                android:id="@+id/txtlocaldoShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView4"
+                android:text="@string/localdoshow"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/txtSobreOShow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/txtDiadoShow"
+                android:layout_marginTop="78dp"
+                android:text="@string/Sobreoshow"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/txtBiografia"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/txtArtista"
+                android:background="#E8E8E8"
+                android:gravity="center"
+                android:text="@string/Biografia"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="18sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/txtCidade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/txtlocaldoShow"
+                android:text="@string/cidadeshow"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/txtBiografia"
+                android:layout_marginTop="14dp"
+                android:text="@string/onde"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#F0FFFF"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/txtCidade"
+                android:layout_marginTop="33dp"
+                android:text="@string/quando"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#F0FFFF"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtDiadoShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView1"
+                android:text="@string/Diadoshow"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/txtDiadoShow"
+                android:layout_marginTop="32dp"
+                android:text="@string/sobres"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#F0FFFF"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtIngresso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/txtSobreOShow"
+                android:layout_marginTop="34dp"
+                android:text="@string/ingresso"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#F0FFFF"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtLinkCompra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/txtIngresso"
+                android:autoLink="web"
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
