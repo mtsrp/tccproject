@@ -9,7 +9,7 @@ import android.widget.RadioButton;
 
 public class Cadastrar extends AppCompatActivity {
 
-    Button Cadastra;
+    Button cadastra;
     EditText Nome, DtaAdmi, Usuario, Senha;
     RadioButton Fun, Adm;
 
@@ -20,8 +20,8 @@ public class Cadastrar extends AppCompatActivity {
 
 
         //Instancia e Função 'ao clicar' do Botão de Cadastro
-        Cadastra = (Button) findViewById(R.id.btnCadastra);
-        Cadastra.setOnClickListener(new View.OnClickListener() {
+        cadastra = findViewById(R.id.btnCadastra);
+        cadastra.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //Verificar se o nome de usuário está disponivel
@@ -32,6 +32,6 @@ public class Cadastrar extends AppCompatActivity {
             }
         });
 
-
     }
+
 }

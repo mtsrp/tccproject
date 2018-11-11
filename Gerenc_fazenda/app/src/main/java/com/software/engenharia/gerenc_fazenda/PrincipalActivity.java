@@ -18,13 +18,22 @@ public class PrincipalActivity extends AppCompatActivity {
         //Instanciamento dos botoes e text do layout
         Logar = (Button) findViewById(R.id.btn_Login);
         Cadastrar = (Button) findViewById(R.id.btn_TesteCadastro);
+
+        Cadastrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent cadastrar = new Intent(PrincipalActivity.this, com.software.engenharia.gerenc_fazenda.Cadastrar.class);
+                startActivity(cadastrar);
+                setContentView(R.layout.cadastrar);
+
+            }
+        });
         Logar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent logar = new Intent(PrincipalActivity.this, Login.class);
-                startActivity(logar);
-
-
+                Intent log =  new Intent(PrincipalActivity.this, Login.class);
+                startActivity(log);
+                setContentView(R.layout.login);
             }
         });
     }

@@ -55,20 +55,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_Usuario" />
 
-    <EditText
-        android:id="@+id/txtConfSenha"
-        android:layout_width="349dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:ems="10"
-        android:hint="Confirma Senha"
-        android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_Senha" />
-
     <RadioGroup
         android:id="@+id/rdngroup_Permissoes"
         android:layout_width="0dp"
@@ -99,10 +85,10 @@
         android:id="@+id/btnCadastra"
         android:layout_width="348dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:text="Cadastrar"
+        android:layout_marginTop="8dp"
+        android:text="Button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintHorizontal_bias="0.777"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rdngroup_Permissoes" />
 
@@ -126,5 +112,5 @@
         android:text="Permissões do Usuário:"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="@+id/rdngroup_Permissoes"
-        app:layout_constraintTop_toBottomOf="@+id/txtConfSenha" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_Senha" />
 </android.support.constraint.ConstraintLayout>
