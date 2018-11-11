@@ -16,7 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Cadastrar"></activity>
+        <activity android:name=".Cadastrar" />
+        <activity android:name=".Funcionario.CentralFuncionario" />
+        <activity android:name=".Funcionario.Busca_Funcionario"></activity>
     </application>
 
 </manifest>

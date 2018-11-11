@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.software.engenharia.gerenc_fazenda.Funcionario.CentralFuncionario;
+
 public class PrincipalActivity extends AppCompatActivity {
 
     Button Logar, Cadastrar;
@@ -31,9 +33,9 @@ public class PrincipalActivity extends AppCompatActivity {
         Logar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent log =  new Intent(PrincipalActivity.this, Login.class);
+                Intent log =  new Intent(PrincipalActivity.this, CentralFuncionario.class);
                 startActivity(log);
-                setContentView(R.layout.login);
+                setContentView(R.layout.activity_central_funcionario);
             }
         });
     }
