@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.software.engenharia.gerenc_fazenda.Funcionario.Busca_Funcionario;
 import com.software.engenharia.gerenc_fazenda.Funcionario.CentralFuncionario;
 
 public class PrincipalActivity extends AppCompatActivity {
@@ -33,9 +34,9 @@ public class PrincipalActivity extends AppCompatActivity {
         Logar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent log =  new Intent(PrincipalActivity.this, CentralFuncionario.class);
+                Intent log =  new Intent(PrincipalActivity.this, Busca_Funcionario.class);
                 startActivity(log);
-                setContentView(R.layout.activity_central_funcionario);
+                setContentView(R.layout.activity_busca__funcionario);
             }
         });
     }
