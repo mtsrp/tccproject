@@ -8,39 +8,35 @@
 
  <?php
  
-include("conexao.php"); 
+include("conection.php"); 
  
-	$RM=$_POST["RM"];
-	$nome=$_POST["nome"];			    
-	$senha=$_POST["senha"];
-	$csenha=$_POST["csenha"]; 
-	$turma=$_POST["turma"];
+	$NOME_FUNC=$_POST["NOME_FUNC"];
+	$DTADMI_FUNC= $_POST["DTADMI_FUNC"];		    
+	$SENHA_FUNC=$_POST["SENHA_FUNC"];
+	$cSENHA_FUNC=$_POST["cSENHA_FUNC"]; 
  
  //Inserindo dados no bd
  
-  if($senha != $csenha){
+  if($SENHA_FUNC != $cSENHA_FUNC){
  
-	echo "<script language=javascript>alert( 'As senhas tem que ser iguais ' ); window.location='http://localhost/site/index.html';</script>";
+	echo "<script language=javascript>alert( 'As SENHA_FUNCs tem que ser iguais ' ); </script>";
 	
  }
  
  
- if($senha == $csenha){
+ if($SENHA_FUNC == $cSENHA_FUNC){
 	
 	
-	
-		$RM=$_POST["RM"];
-		$nome=$_POST["nome"];			    
-		$senha=$_POST["senha"];
-		$csenha=$_POST["csenha"]; 
-		$turma=$_POST["turma"];
+		$NOME_FUNC=$_POST["NOME_FUNC"];
+		$DTADMI_FUNC= $_POST["DTADMI_FUNC"];			    
+		$SENHA_FUNC=$_POST["SENHA_FUNC"];
+		$cSENHA_FUNC=$_POST["cSENHA_FUNC"]; 
 	
 		echo "<script language=javascript>alert( 'CADASTRADO COM SUCESSO! Por favor faça o seu login. ' ); window.location='http://localhost/site/index.html'; </script>";
 		
-		$sql= "UPDATE `cadastro_pessoa` SET `SENHA` ='$senha', `TURMA` = '$turma' WHERE RM = $RM";
+		$sql= "UPDATE `funcionarios` SET `SENHA_FUNC` ='$SENHA_FUNC', `DTADMI_FUNC` = $DTADMI_FUNC  WHERE NOME_FUNC = $NOME_FUNC";
 		echo $sql;
 		$resultado=mysqli_query($con, $sql);
-		
 		
 		
 	}

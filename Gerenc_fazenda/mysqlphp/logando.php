@@ -9,7 +9,7 @@
  <?php
  
  
-include("conexao.php"); 
+include("conection.php");
 session_start();
 
 $USUARIO_FUNC=$_GET["USUARIO_FUNC"];
