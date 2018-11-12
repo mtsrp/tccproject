@@ -1,8 +1,8 @@
-<?php
+﻿<?php
 $servername = "localhost";
-$database = "id7814028_fazenda";
-$username = "id7814028_root";
-$password = "P@ssw0rd";
+$database = "fazenda";
+$username = "root";
+$password = "";
 
 //Dados para conexão
 
