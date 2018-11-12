@@ -6,40 +6,35 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.software.engenharia.gerenc_fazenda.Funcionario.Busca_Funcionario;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
 
-public class Login extends AppCompatActivity {
+public class logar extends AppCompatActivity {
 
-    Button logar;
+    Button entra;
     EditText user, senha;
 
     @Override
-    protected void onCreate (Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.login);
+        setContentView(R.layout.activity_logar);
 
-        logar = findViewById(R.id.btn_Entrar);
+
         user = findViewById(R.id.txt_Usuario);
         senha = findViewById(R.id.txt_Senha);
+        entra = findViewById(R.id.btn_Entrar);
 
-        logar.setOnClickListener(new View.OnClickListener() {
+        entra.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                try {
-                    busca();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
+
             }
         });
-    }
 
+    }
     private InputStream busca() throws IOException {
-        URL url = new URL("localhost/Gerenc_fazenda/mysqlphp/logando.php?USUARIO_FUNC=" +user.getText().toString()+"&SENHA_FUNC="+senha.getText().toString());
+        URL url = new URL("localhost/Gerenc_fazenda/mysqlphp/logando.php?USUARIO_FUNC="+user.getText().toString()+"&SENHA_FUNC="+senha.getText().toString());
         return url.openConnection().getInputStream();
     }
 }

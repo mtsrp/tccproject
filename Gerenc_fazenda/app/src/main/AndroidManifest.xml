@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.software.engenharia.gerenc_fazenda">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -21,7 +21,8 @@
         <activity android:name=".Cadastrar" />
         <activity android:name=".Funcionario.CentralFuncionario" />
         <activity android:name=".Funcionario.Busca_Funcionario" />
-        <activity android:name=".Resultado"></activity>
+        <activity android:name=".Resultado" />
+        <activity android:name=".logar"></activity>
     </application>
 
 </manifest>

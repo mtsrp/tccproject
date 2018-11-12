@@ -7,6 +7,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.URL;
+
 public class Cadastrar extends AppCompatActivity {
 
     Button cadastra;
@@ -26,6 +30,7 @@ public class Cadastrar extends AppCompatActivity {
             public void onClick(View v) {
                 //Verificar se o nome de usuário está disponivel
 
+
                 //Vai pegar os dados digitados e mandar para o .php realizar o cadastro das informações no banco
 
 
@@ -33,5 +38,7 @@ public class Cadastrar extends AppCompatActivity {
         });
 
     }
+
+
 
 }
