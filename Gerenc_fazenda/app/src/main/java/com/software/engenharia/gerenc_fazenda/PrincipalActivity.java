@@ -25,18 +25,17 @@ public class PrincipalActivity extends AppCompatActivity {
         Cadastrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent cadastrar = new Intent(PrincipalActivity.this, com.software.engenharia.gerenc_fazenda.Cadastrar.class);
+                /*Intent cadastrar = new Intent(PrincipalActivity.this, com.software.engenharia.gerenc_fazenda.Cadastrar.class);
                 startActivity(cadastrar);
-                setContentView(R.layout.cadastrar);
+                setContentView(R.layout.cadastrar);*/
 
             }
         });
         Logar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent log =  new Intent(PrincipalActivity.this, Busca_Funcionario.class);
+                Intent log =  new Intent(PrincipalActivity.this, com.software.engenharia.gerenc_fazenda.Login.class);
                 startActivity(log);
-                setContentView(R.layout.activity_busca__funcionario);
             }
         });
     }

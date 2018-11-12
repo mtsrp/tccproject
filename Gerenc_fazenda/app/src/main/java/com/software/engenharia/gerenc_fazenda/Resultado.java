@@ -84,7 +84,7 @@ public class Resultado extends AppCompatActivity {
 
     //Método de busca do artista no PHP.
     private InputStream busca() throws IOException {
-        URL url = new URL("https://engsoftwarefazenda.000webhostapp.com/public_html/php/func_busca.php?nome_func=" + Busca_Funcionario.busca);
+        URL url = new URL("localhost/func_busca.php?nome_func=" + Busca_Funcionario.busca);
         return url.openConnection().getInputStream();
     }
 
