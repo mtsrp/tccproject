@@ -29,7 +29,7 @@ public class logar extends AppCompatActivity {
         entra.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                
+
                 }
         });
 
