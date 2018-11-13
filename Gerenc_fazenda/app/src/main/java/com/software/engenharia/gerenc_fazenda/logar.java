@@ -25,11 +25,12 @@ public class logar extends AppCompatActivity {
         senha = findViewById(R.id.txt_Senha);
         entra = findViewById(R.id.btn_Entrar);
 
+
         entra.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-            }
+                
+                }
         });
 
     }
