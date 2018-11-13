@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    app:layout_scrollFlags="scroll"
     tools:context=".Cadastrar">
 
     <EditText
@@ -14,9 +15,9 @@
         android:ems="10"
         android:hint="Nome Completo"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/txt_DtaAdimi"
         app:layout_constraintHorizontal_bias="0.444"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/txt_DtaAdimi"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
@@ -27,8 +28,8 @@
         android:ems="10"
         android:hint="Data de Admissão"
         android:inputType="date"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/txt_Usuario"
+        app:layout_constraintStart_toStartOf="@+id/txt_Usuario"
         app:layout_constraintTop_toBottomOf="@+id/txt_Nome" />
 
     <EditText
@@ -39,20 +40,21 @@
         android:ems="10"
         android:hint="Usuario"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/txt_Senha"
+        app:layout_constraintStart_toStartOf="@+id/txt_Senha"
         app:layout_constraintTop_toBottomOf="@+id/txt_DtaAdimi" />
 
     <EditText
         android:id="@+id/txt_Senha"
         android:layout_width="348dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="4dp"
         android:ems="10"
         android:hint="Senha"
         android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/txt_permissoes"
+        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintStart_toStartOf="@+id/txt_permissoes"
         app:layout_constraintTop_toBottomOf="@+id/txt_Usuario" />
 
     <RadioGroup
@@ -63,6 +65,7 @@
         android:layout_marginEnd="8dp"
         android:checkedButton="@+id/rdn_Funcionario"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2">
 
@@ -86,7 +89,7 @@
         android:layout_width="348dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Button"
+        android:text="Cadastrar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.777"
         app:layout_constraintStart_toStartOf="parent"
@@ -112,5 +115,29 @@
         android:text="Permissões do Usuário:"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="@+id/rdngroup_Permissoes"
+        app:layout_constraintTop_toBottomOf="@+id/txt_idSetor" />
+
+    <EditText
+        android:id="@+id/txt_permissoes"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Permissões"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/txt_idSetor"
+        app:layout_constraintStart_toStartOf="@+id/txt_idSetor"
         app:layout_constraintTop_toBottomOf="@+id/txt_Senha" />
+
+    <EditText
+        android:id="@+id/txt_idSetor"
+        android:layout_width="348dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Setor"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@+id/txt_permissoes"
+        tools:layout_editor_absoluteX="16dp" />
+
 </android.support.constraint.ConstraintLayout>

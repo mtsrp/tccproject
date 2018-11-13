@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -15,7 +16,8 @@ public class Cadastrar extends AppCompatActivity {
 
     Button cadastra;
     EditText Nome, DtaAdmi, Usuario, Senha;
-    RadioButton Fun, Adm;
+    RadioGroup rd_permissoes;
+    int permissao;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +30,9 @@ public class Cadastrar extends AppCompatActivity {
         cadastra.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //Pega o valor do Raddio Button permissoes
+                permissao = permissao();
+
                 //Verificar se o nome de usuário está disponivel
 
 
@@ -40,5 +45,21 @@ public class Cadastrar extends AppCompatActivity {
     }
 
 
+    //Pega o item do RaddioButtom de Permissoes e seta na variavel permissoes
+    public int permissao() {
+        int permissaoSelect=0;
+        rd_permissoes = findViewById(R.id.rdngroup_Permissoes);
+        switch (rd_permissoes.getCheckedRadioButtonId()) {
+            case R.id.rdn_Funcionario:
+                permissaoSelect = 1;
+                break;
+
+
+            case R.id.rdn_Adm:
+                permissaoSelect = 2;
+                break;
+        }
+        return permissaoSelect;
+    }
 
 }
