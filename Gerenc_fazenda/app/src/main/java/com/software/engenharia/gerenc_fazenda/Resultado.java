@@ -28,7 +28,6 @@ public class Resultado extends AppCompatActivity {
     private CardArrayAdapter cardArrayAdapter;
     private ListView listax ;
     int k=0;
-    String foto = "";
 
     String[] tabela = new String[] {};
 
@@ -84,7 +83,7 @@ public class Resultado extends AppCompatActivity {
 
     //Método de busca do artista no PHP.
     private InputStream busca() throws IOException {
-        URL url = new URL("localhost/func_busca.php?nome_func=" + Busca_Funcionario.busca);
+        URL url = new URL("localhost/func_busca.php?nome_func=Mat");
         return url.openConnection().getInputStream();
     }
 
@@ -109,18 +108,17 @@ public class Resultado extends AppCompatActivity {
                     if (eventType == XmlPullParser.END_TAG) {
                         atual = "";
                     }
-
                     if (eventType == XmlPullParser.TEXT) {
                         if ("NOME_FUNC".equals(atual)) {
                             nome_fun = xpp.getText();
                             k++;
                         }
 
-                        if ("USUARIO_FUNC".equals(atual)) {
+                        if ("DTADMI_FUNC".equals(atual)) {
                             userfunc = xpp.getText();
                             k++;
                         }
-                        if ("DTADMI_FUNC".equals(atual)) {
+                        if ("USUARIO_FUNC".equals(atual)) {
                             dataadm = xpp.getText();
                             k++;
                         }

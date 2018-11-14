@@ -21,7 +21,7 @@ public class logar extends AppCompatActivity {
         setContentView(R.layout.activity_logar);
 
 
-        user = findViewById(R.id.txt_Usuario);
+        user = findViewById(R.id.txt_Usuario2);
         senha = findViewById(R.id.txt_Senha);
         entra = findViewById(R.id.btn_Entrar);
 

@@ -11,7 +11,7 @@ import com.software.engenharia.gerenc_fazenda.Funcionario.CentralFuncionario;
 
 public class PrincipalActivity extends AppCompatActivity {
 
-    Button Logar, Cadastrar;
+    Button Logar, Cadastrar, Teste;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +21,7 @@ public class PrincipalActivity extends AppCompatActivity {
         //Instanciamento dos botoes e text do layout
         Logar = (Button) findViewById(R.id.btn_Login);
         Cadastrar = (Button) findViewById(R.id.btn_TesteCadastro);
+        Teste =  findViewById(R.id.btn_teste);
 
         Cadastrar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,6 +37,14 @@ public class PrincipalActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent log =  new Intent(PrincipalActivity.this, logar.class);
                 startActivity(log);
+            }
+        });
+
+        Teste.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent test =  new Intent(PrincipalActivity.this, Busca_Funcionario.class);
+                startActivity(test);
             }
         });
     }

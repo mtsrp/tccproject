@@ -15,7 +15,7 @@ public class CentralFuncionario extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_central_funcionario);
 
-        BuscaFunc = findViewById(R.id.btn_BuscaFunc);
+        BuscaFunc = findViewById(R.id.btn_RealizaBusca);
         CadasFunc = findViewById(R.id.btn_cadastrafunc);
         AlterFunc = findViewById(R.id.btn_Alterarfunc);
         DemiteFunc = findViewById(R.id.btn_DemitirFunc);

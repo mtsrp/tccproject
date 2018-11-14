@@ -5,12 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.RadioButton;
 import android.widget.RadioGroup;
-
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.URL;
 
 public class Cadastrar extends AppCompatActivity {
 
@@ -26,7 +21,7 @@ public class Cadastrar extends AppCompatActivity {
 
 
         //Instancia e Função 'ao clicar' do Botão de Cadastro
-        cadastra = findViewById(R.id.btnCadastra);
+        cadastra = findViewById(R.id.btnAltera);
         cadastra.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

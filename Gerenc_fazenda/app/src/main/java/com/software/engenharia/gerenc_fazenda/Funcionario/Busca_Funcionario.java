@@ -13,6 +13,7 @@ import android.widget.TextView;
 import android.widget.ArrayAdapter;
 import android.widget.Toast;
 
+import com.software.engenharia.gerenc_fazenda.AlteraFunc;
 import com.software.engenharia.gerenc_fazenda.R;
 import com.software.engenharia.gerenc_fazenda.Resultado;
 
@@ -40,8 +41,7 @@ public class Busca_Funcionario extends AppCompatActivity {
         realizaBusca.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                busca = txt_nome_func.getText().toString().replace(" ", "_");
-                Intent resu = new Intent(Busca_Funcionario.this, Resultado.class);
+                Intent resu = new Intent(Busca_Funcionario.this, AlteraFunc.class);
                 startActivity(resu);
             }
         });
