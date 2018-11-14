@@ -8,6 +8,19 @@
     tools:context=".Cadastrar">
 
     <EditText
+        android:id="@+id/txt_demis"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:ems="10"
+        android:hint="Data de Demissão"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="@+id/txt_Usuario"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txt_Usuario"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Nome" />
+
+    <EditText
         android:id="@+id/txt_Nome"
         android:layout_width="348dp"
         android:layout_height="wrap_content"
@@ -54,10 +67,15 @@
         android:ems="10"
         android:hint="Senha"
         android:inputType="textPassword"
+<<<<<<< Updated upstream
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_Usuario" />
+=======
+        app:layout_constraintTop_toBottomOf="@+id/txt_Usuario"
+        tools:layout_editor_absoluteX="16dp" />
+>>>>>>> Stashed changes
 
     <RadioGroup
         android:id="@+id/rdngroup_Permissoes"
@@ -123,6 +141,7 @@
     <EditText
         android:id="@+id/txt_idSetor"
         android:layout_width="348dp"
+<<<<<<< Updated upstream
         android:layout_height="35dp"
         android:layout_marginTop="8dp"
         android:ems="10"
@@ -132,5 +151,13 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_Senha" />
+=======
+        android:layout_height="46dp"
+        android:ems="10"
+        android:hint="Setor"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="352dp" />
+>>>>>>> Stashed changes
 
 </android.support.constraint.ConstraintLayout>
