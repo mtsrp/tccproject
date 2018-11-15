@@ -4,27 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_scrollFlags="scroll"
-    tools:context=".Cadastrar">
-
-    <EditText
-        android:id="@+id/txt_demis"
-        android:layout_width="348dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="160dp"
-        android:ems="10"
-        android:hint="Data de Demissão"
-        android:inputType="date"
-        app:layout_constraintEnd_toEndOf="@+id/txt_Usuario"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/txt_Usuario"
-        app:layout_constraintTop_toBottomOf="@+id/txt_Nome" />
+    tools:context=".Cadastrar_Funcionario">
 
     <EditText
         android:id="@+id/txt_Nome"
-        android:layout_width="348dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
         android:ems="10"
         android:hint="Nome Completo"
         android:inputType="textPersonName"
@@ -35,9 +23,11 @@
 
     <EditText
         android:id="@+id/txt_DtaAdimi"
-        android:layout_width="348dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
         android:ems="10"
         android:hint="Data de Admissão"
         android:inputType="date"
@@ -48,9 +38,11 @@
 
     <EditText
         android:id="@+id/txt_Usuario"
-        android:layout_width="348dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
         android:ems="10"
         android:hint="Usuario"
         android:inputType="textPersonName"
@@ -61,31 +53,29 @@
 
     <EditText
         android:id="@+id/txt_Senha"
-        android:layout_width="348dp"
-        android:layout_height="44dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
         android:ems="10"
         android:hint="Senha"
         android:inputType="textPassword"
-<<<<<<< Updated upstream
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_Usuario" />
-=======
-        app:layout_constraintTop_toBottomOf="@+id/txt_Usuario"
-        tools:layout_editor_absoluteX="16dp" />
->>>>>>> Stashed changes
+
 
     <RadioGroup
         android:id="@+id/rdngroup_Permissoes"
         android:layout_width="0dp"
-        android:layout_height="69dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:checkedButton="@+id/rdn_Funcionario"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2">
 
@@ -106,9 +96,11 @@
 
     <Button
         android:id="@+id/btn_cadastrafunc"
-        android:layout_width="348dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
         android:text="Cadastrar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -119,45 +111,25 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:text="Cadastro de Funcionário"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="240dp"
-        android:layout_height="28dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
         android:text="Permissões do Usuário:"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_idSetor" />
-
-    <EditText
-        android:id="@+id/txt_idSetor"
-        android:layout_width="348dp"
-<<<<<<< Updated upstream
-        android:layout_height="35dp"
-        android:layout_marginTop="8dp"
-        android:ems="10"
-        android:hint="Setor"
-        android:inputType="number"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_Senha" />
-=======
-        android:layout_height="46dp"
-        android:ems="10"
-        android:hint="Setor"
-        android:inputType="number"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="352dp" />
->>>>>>> Stashed changes
 
 </android.support.constraint.ConstraintLayout>

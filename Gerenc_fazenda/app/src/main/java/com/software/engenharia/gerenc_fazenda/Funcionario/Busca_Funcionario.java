@@ -7,8 +7,10 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.TextView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 import android.widget.ArrayAdapter;
 import android.widget.Toast;
@@ -24,10 +26,10 @@ import java.net.URL;
 public class Busca_Funcionario extends AppCompatActivity {
 
     EditText txt_nome_func;
-    Button realizaBusca;
+    Button realizaBusca, vini, chay;
+    ImageView img1, img2;
     public static String busca;
     private ListView listax;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,16 +39,39 @@ public class Busca_Funcionario extends AppCompatActivity {
         txt_nome_func = findViewById(R.id.txt_BuscaFunc);
         realizaBusca = findViewById(R.id.btn_RealizaBusca);
 
+        vini = findViewById(R.id.btn_vini);
+        chay = findViewById(R.id.btn_chay);
+
 
         realizaBusca.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent resu = new Intent(Busca_Funcionario.this, AlteraFunc.class);
-                startActivity(resu);
+                switch (txt_nome_func.getText().toString()){
+                    case "Vinicius":
+                        vini.setVisibility(View.VISIBLE);
+                        chay.setVisibility(View.INVISIBLE);
+                        break;
+                    case "Charisse":
+                        chay.setVisibility(View.VISIBLE);
+                        vini.setVisibility(View.INVISIBLE);
+                        break;
+                    case "":
+                        vini.setVisibility(View.VISIBLE);
+                        chay.setVisibility(View.VISIBLE);
+                        break;
+                }
+
             }
         });
 
+        vini.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+                Intent alter = new Intent(Busca_Funcionario.this, AlteraFunc.class);
+                startActivity(alter);
+            }
+        });
 
     }
 

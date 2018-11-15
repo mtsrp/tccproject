@@ -20,22 +20,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:text="Text line 1" />
+            android:text="Nome: Charisse" />
 
         <TextView
             android:id="@+id/line2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
             android:layout_below="@+id/line1"
-            android:text="Text line 2" />
+            android:layout_alignParentLeft="true"
+            android:text="Admissão: 21/05/2003" />
 
         <TextView
             android:id="@+id/line3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
             android:layout_below="@+id/line2"
-            android:text="Text line 3" />
+            android:layout_alignParentLeft="true"
+            android:text="Usuário: ChayLaurin" />
     </RelativeLayout>
 </FrameLayout>

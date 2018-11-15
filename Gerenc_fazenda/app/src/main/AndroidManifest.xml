@@ -18,12 +18,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Cadastrar" />
         <activity android:name=".Funcionario.CentralFuncionario" />
         <activity android:name=".Funcionario.Busca_Funcionario" />
         <activity android:name=".Resultado" />
         <activity android:name=".logar" />
-        <activity android:name=".AlteraFunc"></activity>
+        <activity android:name=".AlteraFunc" />
+        <activity android:name=".Cadastrar_Funcionario"></activity>
     </application>
 
 </manifest>
