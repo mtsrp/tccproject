@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.Button;
 
 import com.software.engenharia.gerenc_fazenda.Funcionario.Busca_Funcionario;
-import com.software.engenharia.gerenc_fazenda.Funcionario.CentralFuncionario;
 
 public class PrincipalActivity extends AppCompatActivity {
 

@@ -68,7 +68,7 @@ public class Busca_Funcionario extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent alter = new Intent(Busca_Funcionario.this, AlteraFunc.class);
+                Intent alter = new Intent(Busca_Funcionario.this, CentralFuncionario.class);
                 startActivity(alter);
             }
         });

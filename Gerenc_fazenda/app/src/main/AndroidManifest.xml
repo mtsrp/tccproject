@@ -11,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PrincipalActivity">
+        <activity android:name=".logar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,7 +21,7 @@
         <activity android:name=".Funcionario.CentralFuncionario" />
         <activity android:name=".Funcionario.Busca_Funcionario" />
         <activity android:name=".Resultado" />
-        <activity android:name=".logar" />
+        <activity android:name=".PrincipalActivity" />
         <activity android:name=".AlteraFunc" />
         <activity android:name=".Cadastrar_Funcionario"></activity>
     </application>
