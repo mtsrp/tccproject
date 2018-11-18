@@ -23,7 +23,8 @@
         <activity android:name=".Resultado" />
         <activity android:name=".PrincipalActivity" />
         <activity android:name=".AlteraFunc" />
-        <activity android:name=".Cadastrar_Funcionario"></activity>
+        <activity android:name=".Cadastrar_Funcionario" />
+        <activity android:name=".Setor.Cadastrar_Setor"></activity>
     </application>
 
 </manifest>

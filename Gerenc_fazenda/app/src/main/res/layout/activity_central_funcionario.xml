@@ -33,7 +33,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_permis" />
 
     <Button
         android:id="@+id/btn_Sair"
@@ -94,7 +94,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/txt_situacao"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -109,7 +109,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/txt_permis"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -121,5 +121,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_situacao" />
 </android.support.constraint.ConstraintLayout>
