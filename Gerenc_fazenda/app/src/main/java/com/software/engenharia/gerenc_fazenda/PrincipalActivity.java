@@ -14,7 +14,7 @@ import com.software.engenharia.gerenc_fazenda.Funcionario.Busca_Funcionario;
 public class PrincipalActivity extends AppCompatActivity {
 
     private AlertDialog alterok;
-    Button CadasSetor, Cadastrar, Teste;
+    Button CadasSetor, Cadastrar, Teste, BuscaSet;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +25,15 @@ public class PrincipalActivity extends AppCompatActivity {
         Cadastrar = (Button) findViewById(R.id.btn_TesteCadastro);
         Teste =  findViewById(R.id.btn_teste);
         CadasSetor = findViewById(R.id.btn_cadastrasetor);
+        BuscaSet = findViewById(R.id.btn_Buscasetor);
 
+        BuscaSet.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent busSet = new Intent(PrincipalActivity.this, BuscaSetor.class);
+                startActivity(busSet);
+            }
+        });
         CadasSetor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

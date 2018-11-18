@@ -24,7 +24,9 @@
         <activity android:name=".PrincipalActivity" />
         <activity android:name=".AlteraFunc" />
         <activity android:name=".Cadastrar_Funcionario" />
-        <activity android:name=".Setor.Cadastrar_Setor"></activity>
+        <activity android:name=".Setor.Cadastrar_Setor" />
+        <activity android:name=".BuscaSetor" />
+        <activity android:name=".CentralSetor"></activity>
     </application>
 
 </manifest>
