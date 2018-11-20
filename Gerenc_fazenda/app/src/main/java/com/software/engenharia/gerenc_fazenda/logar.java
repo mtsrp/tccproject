@@ -38,6 +38,9 @@ public class logar extends AppCompatActivity {
                 if(user.getText().toString().equals("Matheus")&&senha.getText().toString().equals("senha")){
                     Intent loga = new Intent(logar.this, PrincipalActivity.class);
                     startActivity(loga);
+                }else if(user.getText().toString().equals("Charisse")&&senha.getText().toString().equals("senha")){
+                    Intent loga = new Intent(logar.this, InicioFuncionario.class);
+                    startActivity(loga);
                 }else{
                     erra.setVisibility(View.VISIBLE);
                 }

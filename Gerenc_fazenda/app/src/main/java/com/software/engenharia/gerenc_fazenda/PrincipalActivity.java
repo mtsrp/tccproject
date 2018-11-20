@@ -10,11 +10,15 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.software.engenharia.gerenc_fazenda.Funcionario.Busca_Funcionario;
+import com.software.engenharia.gerenc_fazenda.Ocorrencias.BuscaOcorrencia;
+import com.software.engenharia.gerenc_fazenda.Ocorrencias.CadastraOcorrencia;
+import com.software.engenharia.gerenc_fazenda.Tarefas.BuscaTarefa;
+import com.software.engenharia.gerenc_fazenda.Tarefas.CadastrarTarefa;
 
 public class PrincipalActivity extends AppCompatActivity {
 
     private AlertDialog alterok;
-    Button CadasSetor, Cadastrar, Teste, BuscaSet;
+    Button CadasSetor, Cadastrar, Teste, BuscaSet, CadasTarefa, busTarefa, CadsOcorrencia, BuscaOcorre;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +30,42 @@ public class PrincipalActivity extends AppCompatActivity {
         Teste =  findViewById(R.id.btn_teste);
         CadasSetor = findViewById(R.id.btn_cadastrasetor);
         BuscaSet = findViewById(R.id.btn_Buscasetor);
+        CadasTarefa = findViewById(R.id.btn_cadTarefa);
+        busTarefa = findViewById(R.id.btn_verTarerfas);
+        CadsOcorrencia = findViewById(R.id.btn_cadOcorrencia);
+        BuscaOcorre = findViewById(R.id.btn_verOcorrencias);
 
+        BuscaOcorre.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent iniBusocorre = new Intent(PrincipalActivity.this, BuscaOcorrencia.class);
+                startActivity(iniBusocorre);
+            }
+        });
+
+        CadsOcorrencia.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent iniCadOcorrencia = new Intent(PrincipalActivity.this, CadastraOcorrencia.class);
+                startActivity(iniCadOcorrencia);
+            }
+        });
+
+        busTarefa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent busTarefa = new Intent(PrincipalActivity.this, BuscaTarefa.class);
+                startActivity(busTarefa);
+            }
+        });
+
+        CadasTarefa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent caTarefa = new Intent(PrincipalActivity.this, CadastrarTarefa.class);
+                startActivity(caTarefa);
+            }
+        });
         BuscaSet.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

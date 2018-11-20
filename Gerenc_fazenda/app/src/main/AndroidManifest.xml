@@ -24,9 +24,17 @@
         <activity android:name=".PrincipalActivity" />
         <activity android:name=".AlteraFunc" />
         <activity android:name=".Cadastrar_Funcionario" />
-        <activity android:name=".Setor.Cadastrar_Setor" />
         <activity android:name=".BuscaSetor" />
-        <activity android:name=".CentralSetor"></activity>
+        <activity android:name=".CentralSetor" />
+        <activity android:name=".Tarefas.CadastrarTarefa" />
+        <activity android:name=".Tarefas.BuscaTarefa" />
+        <activity android:name=".Tarefas.Tarefa" />
+        <activity android:name=".Tarefas.AlteraTarefa" />
+        <activity android:name=".Ocorrencias.CadastraOcorrencia" />
+        <activity android:name=".Ocorrencias.BuscaOcorrencia" />
+        <activity android:name=".Ocorrencias.Ocorrencia" />
+        <activity android:name=".Ocorrencias.AlteraOcorrencia" />
+        <activity android:name=".InicioFuncionario"></activity>
     </application>
 
 </manifest>
